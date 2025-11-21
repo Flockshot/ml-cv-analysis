@@ -53,12 +53,12 @@ A two-loop system was implemented to separate hyperparameter tuning from model e
 
 After running all four algorithms through the identical nested cross-validation framework, the **Random Forest** was the clear and consistent winner.
 
-| Model | Mean Accuracy | F₁ Score (Mean) |
-| :--- | :---: | :---: |
-| **Random Forest** | **0.76** | **(High)** |
-| SVM | - | - |
-| Decision Tree | - | - |
-| k-Nearest Neighbors (KNN) | - | - |
+| Model | Mean Accuracy |
+| :--- | :---: |
+| **Random Forest** | **0.76** |
+| SVM | 0.74 |
+| Decision Tree | 0.70 |
+| k-Nearest Neighbors (KNN) | 0.72 |
 
 *The Random Forest consistently outperformed all other models, achieving a mean accuracy of 0.76 and a high F₁ score, confirmed through repeated testing across folds.*
 
