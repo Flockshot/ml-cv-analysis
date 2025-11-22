@@ -43,9 +43,7 @@ A two-loop system was implemented to separate hyperparameter tuning from model e
 
 * **Final Evaluation:** The tuned model from the inner loop is finally evaluated *once* on the "unseen" test fold from the outer loop. The result is a list of 50 independent performance scores (10 folds x 5 repeats) for each algorithm, providing a highly reliable mean accuracy and confidence interval.
 
-> **[Image: Diagram of Nested Cross-Validation]**
->
-> *(**Developer Note:** A diagram showing the outer loop splitting data for testing and the inner loop (GridSearchCV) running its own CV for tuning would be perfect here.)*
+![Image: Diagram of Nested Cross-Validation](.media/cross_validation.png)
 
 ---
 
@@ -71,9 +69,7 @@ To understand *why* the models were making their decisions, further analysis was
 * **Random Forest (Winner):** A **Feature Importance** analysis was conducted on the tuned Random Forest model to identify which data features (e.g., credit history, account balance) were the most predictive of a positive outcome.
 * **SVM:** The **Support Vectors** were inspected to understand which data points were most critical in defining the decision boundary between "approve" and "deny."
 
-> **[Image: Bar chart of Random Forest feature importances]**
->
-> *(**Developer Note:** Place the bar chart showing the most important features from your Random Forest model here.)*
+![Image: Bar chart of Random Forest feature importances](.media/feature_importance_bar_chart.png)
 
 ---
 
